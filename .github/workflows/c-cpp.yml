@@ -17,4 +17,7 @@ jobs:
       run: make clean
     - name: make 
       run: make 
-
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v2.2.3
+      with:
+        path: st
